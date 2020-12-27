@@ -26,6 +26,7 @@
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+    <script src="js/Valine.min.js"></script>
 
    <!-- favicons
 	================================================== -->
@@ -110,12 +111,89 @@
 
                             <ul class="entry-meta">
                                 <li class="date">Latest updated: January 1, 2021</li>
+                                <span id="/list.html" class="leancloud_visitors" data-flag-title="todolist">
+                                    <li class="post-meta-item-text">被看了 </li>
+                                    <li class="leancloud-visitors-count">loading</li>
+                                </span>
+                                <li class="date"> </li>
                                 <li class="cat"><a>Bergamottt</a></li>
                             </ul>
                             <p>1: none；</p>
                         </div>
                     </article>
+                    
+                    
+                    <h1 style="text-align:center;">一起来完善吧~</h1>
+                    <div id="vcomments"></div>
+                    <style>
+                        #vcomments textarea {
+                            box-sizing: border-box;
+                            background: url("../images/thumbs/pikachu.gif") 100% 100% no-repeat;
+                        }
+                    </style>
+                    <script>
+                        var path = window.location.pathname.replace('index.html','');
+                        new Valine({
+                            el: '#vcomments',
+                            appId: 'vnyfTG3UI6EzapLCaRxsvDD3-MdYXbMMI',
+                            appKey: 'VbsPVCLkqSQv271bx8tgDYzj',
+                            meta: ['nick'],
+                            avatar: 'hide',
+                            placeholder: '芜湖~新年快乐~',
 
+                            emojiCDN: 'https://cdn.jsdelivr.net/gh/RuoLv/valineCDN@master/cat_emoji/',
+                            emojiMaps: {
+                                "我不听": "v2-0c32e659c64f800738492a328c74ed8e_720w.jpg",
+                                "微信好": "wechat_hao.gif",
+                                "大魔王": "wechat_damowang.jpg",
+                                "来了": "wechat_laile.jpg",
+                                "委屈": "wechat_weiweiququ.jpg",
+                                "都是我的": "wechat_dswd.jpg",
+                                "胖胖不乐": "wechat_pangpangbule.jpg",
+                                "哭": "wechat_ku.jpg",
+                                "？？？": "v2-0e95900765618be541b8a09cb4e80056_720w.jpg",
+                                "我怎么这么可爱呀": "v2-1ce73c4e07892f2d69d472d02ca347e2_720w.jpg",
+                                "我不要面子的吗": "v2-1e07def206e0057e2939af1890cf9305_720w.jpg",
+                                "为什么不回我": "v2-2f5df6a440f52d34192bc8ab47ac6ed5_720w.jpg",
+                                "一起打游戏": "v2-3dbd60ab1f2fc916844937d61dd0e243_720w.jpg",
+                                "你想干嘛": "v2-6bd8e55abfd44841c760e4d6abb72ca0_720w.jpg",
+                                "你能拿我怎么样": "v2-7ba811e4c7d02d01d5044cecf7d18abe_720w.jpg",
+                                "不开心": "v2-9cc449d9e18d63df5377401f8a508a01_720w.jpg",
+                                "理我": "v2-22e6a0a40967dd79d029fb6b443c5ff0_720w.jpg",
+                                "膨胀": "v2-34d768aef747ff7e84cfcc8ec910d3e3_720w.jpg",
+                                "傻子": "v2-46b9923babc6d0b1956ca06e66a1625c_720w.jpg",
+                                "哈哈哈哈哈哈哈": "v2-57fe6f4e87aba1fd4ec599bb414fd4f2_720w.jpg",
+                                "变老": "v2-62bb7f1b6d7f49552e5cc81e9a378cf1_720w.jpg",
+                                "等晚安安": "v2-63f6d7a3127fff8c28be40759087be80_720w.jpg",
+                                "强颜欢笑": "v2-69d9046376c259f703a05b1aec6b0fdd_720w.jpg",
+                                "胡说八道": "v2-72ad10a84ca465f1a9c02ac6167425db_720w.jpg",
+                                "极度嫌弃": "v2-76bc15e648fc4a6301333130d998348f_720w.jpg",
+                                "别惹我": "v2-3746b4a19770755583313c448cb0dce2_720w.jpg",
+                                "不屑": "v2-6731f955c5cefb012d7c6f60c83fcb97_720w.jpg",
+                                "准备生气": "v2-8910d467475639036364bd9b2d5aeb75_720w.jpg",
+                                "哄我": "v2-9822d82ce052a487cf20dd8ac660c291_720w.jpg",
+                                "我要闹了": "v2-6145945cd9b0bcb4beca09848fc6a6e5_720w.jpg",
+                                "喵喵拳": "v2-7568365a31891a8b7f1f6f13273e4b9b_720w.jpg",
+                                "你再说一句": "v2-a7d733d60602b3c30a3c84199c34244e_720w.jpg",
+                                "你说啥": "v2-a8a899d5de2ce168fa7a9e35b45a4203_720w.jpg",
+                                "你过来啊": "v2-aa2896dea8beab867118e2f404142bda_720w.jpg",
+                                "健身": "v2-b5e12d0791cdae036fd8802ee24882f3_720w.jpg",
+                                "白猫？": "v2-d18c28ed05c6e177d49090b3ea50a7f8_720w.jpg",
+                                "我很方": "v2-d763c2007290c28908adca1b01554fe0_720w.jpg",
+                                "森气": "v2-db190184a8f97217a92ae45ac2102f60_720w.jpg",
+                                "干哈": "v2-df53bdb17e77b3c6c14ca7de26eb62d9_720w.jpg",
+                                "还知道找我": "v2-dfc7f2841c13a452506b6a6eb59944a4_720w.jpg",
+                                "滚": "v2-e3ca0d2b3edc6f85bbc1306d2969f5cb_720w.jpg",
+                                "IMAKITTY": "v2-eef8c0fff96a879733362635affd214c_720w.jpg",
+                                "记小本本": "v2-f8fb87545a6ee6c319682afede8f1bb5_720w.jpg",
+                                "外面有狗": "v2-f23e4ce4adb54e5f0cb0ac6bc4ebcdb0_720w.jpg",
+                                "懒死": "v2-f37e20d5edd2a2884be2e6d4702e91c8_720w.jpg",
+                                "呕！": "wechat_ou.jpg",
+                            },
+                            visitor: true,
+                            lang: 'zh-CN'.toLowerCase()
+                        })
+                    </script>
 
                 </div> <!-- end col-twelve -->
             </div> <!-- end row -->
